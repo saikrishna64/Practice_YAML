@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: List files
-        run: ls -al /home/Practice_YAML/
+        run: ls -al /Practice_YAML/
       
       - name: set up Node.js
         uses: actions/setup-node@v2
@@ -19,8 +19,8 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: cd /home && npm install
+        run: cd /Practice_YAML && npm install
 
       - name: Run tests
-        run: cd /home && npm test
+        run: cd /Practice_YAML && npm test
 
