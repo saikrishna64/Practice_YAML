@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: List files
+        run: ls -al /home/runner/work/Practice_YAML/Practice_YAML/
       
       - name: set up Node.js
         uses: actions/setup-node@v2
